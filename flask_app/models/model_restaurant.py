@@ -34,6 +34,6 @@ class Restaurant:
                 "created_at" : row_from_db["burgers.created_at"],
                 "updated_at" : row_from_db["burgers.updated_at"]
             }
-            restaurant.burgers.append( burger.Burger( burger_data ) )
+            restaurant.burgers.append( model_burger.Burger( burger_data ) )
         return restaurant
 
